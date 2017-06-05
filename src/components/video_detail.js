@@ -11,7 +11,7 @@ const VideoDetail = ({video}) => {
   return (
     <div className='video-detail'>
       <div className='video-box'>
-        <iframe className='video-embed' src={url} allowFullScreen ></iframe>
+        <iframe className='video-embed' src={url+'?autoplay=1'} allowFullScreen ></iframe>
       </div>
       <div className='video-info'>
         <h1>{video.snippet.title}</h1>
@@ -21,5 +21,5 @@ const VideoDetail = ({video}) => {
     </div>
   );
 };
-/*+'?autoplay=1'*/
+
 export default VideoDetail;
